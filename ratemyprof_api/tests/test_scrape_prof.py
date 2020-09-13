@@ -4,3 +4,4 @@ uci = "1074"
 
 def test_init_ratemyprof():
     api = RateMyProfApi(uci, testing = True)
+    assert len(api.professors) > 1
